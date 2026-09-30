@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(1, 2, 17);
+}
+.allmain{
+    display: flex;
+}
+aside{
+    height: 100vh;
+    width: 60px;
+    /* background-color: gray; */
+    /* background-color: transparent; */
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.head_img{
+     margin-bottom: 100px;
+}
+li{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    margin-top: 32px;
+    margin-left: 15px;
+    color: gray;
+    font-family: sans-serif;
+    /* font-weight: 800; */
+}
+.asmain i{
+    margin-top:30px ;
+    margin-left: 40px;
+    font-size: 16px;
+    z-index: 1;
+    color: gray;
+}
+aside:hover{
+    width: 150px;
+    transition-delay:0.5s;
+}
+.asmain i,a:hover{
+    color: white;
+}
+.sec1{
+    margin-top: 11%;
+    font-family: sans-serif;
+    color: rgb(163, 156, 156);
+    margin-left: 120px;
+    z-index: 2;
+}
+.sec2{
+    margin-top: 2%;
+    font-family: sans-serif;
+    color: rgb(163, 156, 156);
+    margin-left: 120px;
+    z-index: 2;
+}
+.box{
+    display: flex;
+    gap: 10px;
+}
+.box1{
+    height: 130px;
+    width: 230px;
+    /* border: 1px solid gray; */
+    border-radius: 5px;
+    margin-top: 8px;
+}
+.box1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+.box1:hover{
+    transform: scale(1.1);
+}
+.foot{
+    background-color:transparent;
+    height: 180px;
+    width: 100%;
+    margin-left: 120px;
+    margin-top: 130px;
+    display: flex;
+    gap: 220px;
+}
+.foot h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+    padding-bottom: 25px;
+}
+.foot p{
+    color: gray;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.foot i{
+    font-size: 20px;
+    color: white;
+}
+.foot2{
+    background-color:transparent;
+    /* border: 1px solid gray; */
+    height: 110px;
+    width: 100%;
+    margin-left: 120px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 700px;
+}
+.foot2 p{
+    color: gray;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    font-weight: 600; 
+}
+.foot2 img{
+    height: 40px;
+}
+
+@media (max-width: 575.99px) {
+  .allmain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .allmain > aside {
+    width: 55px;
+  }
+  .allmain > aside:hover{
+    width: 120px;
+  }
+
+  .asmain {
+    /* display: flex; */
+    justify-content: space-around;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-left: -19px;
+  }
+
+  .asmain li {
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .asmain li a {
+    display: block;
+    font-size: 12px;
+  }
+  .head_img img {
+    width: 40px;
+  }
+  .box {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 10px 0;
+    /* margin-bottom: -90px; */
+    }
+    .box1 {
+    flex: 0 0 30%;
+    }
+    .sec1{
+        margin-top: 150px;
+    }
+    .sec2{
+        margin-top: -50px;
+    }
+    .box1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+    .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .foot1 {
+    width: 100%;
+  }
+
+  .foot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    margin-top: 340px;
+  }
+
+  .foot2 > div:last-child {
+    display: flex;
+    gap: 12px;
+  }
+
+  .foot2 img {
+    max-width: 120px;
+    height: auto;
+  }
+  .h31{
+    margin-bottom: 1px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .allmain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .allmain > aside {
+    width: 55px;
+  }
+
+  .allmain > aside:hover {
+    width: 120px;
+  }
+
+  .asmain {
+    /* display: flex; */
+    justify-content: space-around;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-left: -19px;
+  }
+
+  .asmain li {
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .asmain li a {
+    display: block;
+    font-size: 12px;
+  }
+
+  .head_img img {
+    width: 40px;
+  }
+
+  .box {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 10px 0;
+    /* margin-bottom: -90px; */
+  }
+
+  .box1 {
+    flex: 0 0 30%;
+  }
+
+  .sec1 {
+    margin-top: 150px;
+  }
+
+  .sec2 {
+    margin-top: -50px;
+  }
+
+  .box1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .foot1 {
+    width: 100%;
+  }
+
+  .foot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    margin-top: 340px;
+  }
+
+  .foot2 > div:last-child {
+    display: flex;
+    gap: 12px;
+  }
+
+  .foot2 img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .h31 {
+    margin-bottom: 1px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .allmain {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .allmain > aside {
+    width: 55px;
+  }
+
+  .allmain > aside:hover {
+    width: 120px;
+  }
+
+  .asmain {
+    /* display: flex; */
+    justify-content: space-around;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-left: -19px;
+  }
+
+  .asmain li {
+    list-style: none;
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  .asmain li a {
+    display: block;
+    font-size: 12px;
+  }
+
+  .head_img img {
+    width: 40px;
+  }
+
+  .box {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 10px 0;
+    /* margin-bottom: -90px; */
+  }
+
+  .box1 {
+    flex: 0 0 20%;
+  }
+
+  .sec1 {
+    margin-top: 150px;
+  }
+
+  .sec2 {
+    margin-top: -50px;
+  }
+
+  .box1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .foot1 {
+    width: 100%;
+  }
+
+  .foot2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+    margin-top: 340px;
+  }
+
+  .foot2 > div:last-child {
+    display: flex;
+    gap: 12px;
+  }
+
+  .foot2 img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .h31 {
+    margin-bottom: 1px;
+  }
+}
